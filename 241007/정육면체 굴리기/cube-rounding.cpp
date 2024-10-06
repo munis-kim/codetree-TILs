@@ -125,7 +125,7 @@ int main() {
     cin.tie(NULL);
     cout.tie(NULL);
 
-    cin >> n >> m >> x >> y >> k;
+    cin >> n >> m >> y >> x >> k;
 
     for (int i = 0; i < n; ++i) {
         for (int j = 0; j < m; ++j) {
