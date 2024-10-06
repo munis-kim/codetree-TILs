@@ -5,7 +5,7 @@ using namespace std;
 
 vector<int> v;
 int cap, mem;
-int ans;
+long long ans;
 
 int main() {
     ios_base::sync_with_stdio(false);
