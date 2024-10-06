@@ -69,12 +69,6 @@ void move_south() {
 }
 
 void move() {
-    if (dir[0] == 1 || dir[0] == 2) {
-        y_axis.push_back(0);
-    }
-    else {
-        x_axis.push_back(0);
-    }
     for (int i = 0; i < k; ++i) {
         int d = dir[i];
 
@@ -83,6 +77,15 @@ void move() {
         int ny = y + dy[d - 1];
         if (nx < 0 || nx >= m || ny < 0 || ny >= n) continue;
 
+        if (before_dir == 0) {
+            if (d == 1 || d == 2) {
+                y_axis.push_back(0);
+            }
+            else {
+                x_axis.push_back(0);
+            }
+        }
+        
         x = nx;
         y = ny;
 
